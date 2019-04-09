@@ -1,0 +1,35 @@
+{
+  "name": "css-masterclass",
+  "version": "1.0.0",
+  "description": "1. CSS Nnmext 2. Flexbox 3. CSS Grid",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Y00je0ngS0n/css-masterclass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Y00je0ngS0n/css-masterclass/issues"
+  },
+  "homepage": "https://github.com/Y00je0ngS0n/css-masterclass#readme",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-preset-env": "^6.6.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      },
+      "postcss-color-mod-function": {},
+      "postcss-grid-kiss": true
+    }
+  },
+  "dependencies": {
+    "postcss-grid-kiss": "^2.1.2"
+  }
+}
