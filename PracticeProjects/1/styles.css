@@ -136,3 +136,17 @@ li{
     background-color: var(--colorSeven);
 }
 
+.footer__columns{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.footer__column{
+    position: relative;
+    display: flex;
+}
+
+.column-column{
+    margin-right: 165px;
+}
