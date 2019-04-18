@@ -1,0 +1,167 @@
+:root {
+    --borderTop: 1px solid rgba(0, 0, 0, 0.1);
+    --borderBottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #fafafc;
+
+  }
+
+.header {
+    margin: 20px;
+}
+
+.navigation {
+    margin-left: -30px;
+    margin-right: 12px;
+    margin-bottom: 27px;    
+}
+
+.navigation__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.navigation__list .navigation__item {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    transition: opacity 0.1s linear;
+}
+
+.navigation__list:hover .navigation__item {
+    opacity: 0.5;
+}
+.navigation__list .navigation__item:hover {
+    opacity: 1;
+}
+
+.navigation__item .item__icon {
+    background-color: white;
+    border-radius: 80%;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: box-shadow 0.2s linear;
+    cursor: pointer;
+}
+
+.navigation__item:hover .item__icon {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.navigation__item .item__text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.featured {
+    border-top: var(--borderTop);
+    padding: 10px;
+}
+
+.featured .featured__title {
+    font-size: 19px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.featured .featured__wrapper {
+    overflow: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(200px, 1fr);
+    grid-gap: 30px;
+    padding-bottom: 10px;
+}
+
+.featured-meal {
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    color: white;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+.featured-meal .featured-meal__button{
+    border: 0;
+}
+
+.featured-meal h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.featured-meal:first-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2016/04/One-Pot-Broccoli-Alfredo-Pasta-01-420x280.jpg);
+}
+
+.featured-meal:last-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(https://cdn.websites.hibu.com/eba5d81d721741b4a85e126544935ff7/dms3rep/multi/mobile/86495126.jpg);
+}
+
+.featured-meal:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(https://media-cdn.tripadvisor.com/media/photo-s/0d/7d/de/9f/japanese-t-bone-steak.jpg);
+}
+
+.featured-meal:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(https://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_900x675/public/styles/300x300/public/image/recipes/oh/gluten/oh-pizza-margherita-x.jpg?itok=nB0nbp80);
+}
+
+.featured-meal__button {
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+.recipes {
+    margin-top: 25px;
+    border-top: var(--borderTop);
+}
+
+.recipes__list {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recipes__list .recipe:nth-child(odd) {
+    background-color: white;
+  }
+
+.recipes__list .recipe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: var(--borderBottom);
+}
+
+.recipe__btn{
+    all: unset;
+}
